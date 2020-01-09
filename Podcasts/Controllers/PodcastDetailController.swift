@@ -57,8 +57,7 @@ class PodcastDetailController: UIViewController {
                                   collectionName: podcast.collectionName,
                                   artworkUrl100: podcast.artworkUrl100,
                                   artistName: podcast.artistName,
-                                  favoritedBy: "Please put your name here then remove the fatalError() line below")
-    fatalError("Please update your name in the favoritedBy argument above then remove this line.")
+                                  favoritedBy: "Tsering")
     
     PodcastAPIClient.postToFavorites(favorite: favoritePodcast) { [weak self, weak sender] (result) in
       switch result {

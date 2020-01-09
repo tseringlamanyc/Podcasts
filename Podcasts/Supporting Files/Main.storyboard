@@ -49,7 +49,7 @@
         <!--Favorites-->
         <scene sceneID="9Rs-C0-1TF">
             <objects>
-                <viewController id="Muq-8e-dmK" customClass="FavoritesViewController" customModule="Podcasts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoritesViewController" id="Muq-8e-dmK" customClass="FavoritesViewController" customModule="Podcasts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qwR-Od-oMU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

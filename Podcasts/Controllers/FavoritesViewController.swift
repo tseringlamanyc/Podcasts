@@ -29,7 +29,7 @@ class FavoritesViewController: UIViewController {
     tableView.delegate = self
     
     // TODO: register Podcast nib here
-    
+    tableView.register(UINib(nibName: "PodcastCell", bundle: nil), forCellReuseIdentifier: "podcastCell")
     configureRefreshControl()
     fetchFavorites()
   }
@@ -59,8 +59,7 @@ class FavoritesViewController: UIViewController {
       case .failure(let appError):
         print(appError)
       case .success(let podcasts):
-        fatalError("update the filter name below then remove this fatalError() line")
-        self?.podcasts = podcasts.filter { $0.favoritedBy == "your name here" }
+        self?.podcasts = podcasts.filter { $0.favoritedBy == "Tsering" }
       }
     }
   }
